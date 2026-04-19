@@ -33,10 +33,11 @@ To reproduce the analyses and regenerate the animations, run these steps in your
 * `notebooks/kmeans_pca_animation.ipynb`: The main reproducible notebook containing EDA, PCA, and custom step-by-step standard K-means visualization.
 * `notebooks/kmeans_pp_animation.ipynb`: Exploring the smarter K-Means++ initialization algorithm.
 * `notebooks/gmm_animation.ipynb`: Advanced notebook showing probabilistic Gaussian Mixture Model clustering, complete with interactive 3D likelihood surfaces using Plotly and Expectation-Maximization (EM) traces.
-* `animations/`: Directory containing the final high-quality animated GIFs (e.g., `kmeans_animation.gif`, `gmm_em_animation.gif`) showcasing the cluster iterations until convergence.
+* `notebooks/dbscan_animation.ipynb`: Step-by-step DBSCAN visualization using the `make_moons` dataset and an animated neighborhood expansion GIF.
+* `animations/`: Directory containing the final high-quality animated GIFs (e.g., `kmeans_animation.gif`, `gmm_em_animation.gif`, `dbscan_animation.gif`) showcasing the cluster iterations until convergence.
 * `requirements.txt`: Package versions matching this project's tested environment.
 * `.gitignore`: Project git ignores (explicitly tracking GIFs).
 
 ## Future Scope
-* **DBSCAN Visualization**: Adding animations for density-based spatial clustering of applications with noise.
 * **Hierarchical Clustering**: Visualizing agglomerative clustering and generating interactive dendrograms.
+* **More Datasets & Parameters**: Parameterized notebooks and interactive widgets (e.g., `eps` / `min_samples` sliders) for experimenting with clustering behaviour across datasets.
